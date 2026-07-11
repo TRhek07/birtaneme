@@ -706,23 +706,16 @@ margin-top:40px;
 `;
 
 createConfetti();
-
-},900);
-
-}// FOTOĞRAFLAR
+  
 setTimeout(() => {
 
-const gallery = document.getElementById("photoGallery");
-
-if(gallery){
+const gallery=document.getElementById("photoGallery");
 
 gallery.innerHTML=`
-
 <img src="foto1.jpg" class="photo">
 <img src="foto2.jpg" class="photo">
 <img src="foto3.jpg" class="photo">
 <img src="foto4.jpg" class="photo">
-
 `;
 
 const photos=document.querySelectorAll(".photo");
@@ -734,13 +727,15 @@ setTimeout(()=>{
 p.style.opacity="1";
 p.style.transform="scale(1)";
 
-},i*800);
+},i*700);
 
 });
 
-}
+},300);
+},900);
 
-},1500);
+}// FOTOĞRAFLAR
+
 
 
 // GÜL YAPRAKLARI
